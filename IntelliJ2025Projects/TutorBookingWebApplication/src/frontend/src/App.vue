@@ -1,15 +1,15 @@
 <template>
 
-  <LoginPage />
+  <CalenderComponent />
 </template>
 
 <script>
-import LoginPage from './components/LoginPage.vue'
+import CalenderComponent from './components/CalenderComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    LoginPage
+   CalenderComponent
   }
 }
 </script>
