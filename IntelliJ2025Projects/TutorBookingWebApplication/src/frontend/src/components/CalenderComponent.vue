@@ -72,18 +72,6 @@
       </div>
     </div>
 
-<!--      &lt;!&ndash; Day View &ndash;&gt;-->
-<!--    <div v-if="view === 'day'" class="calendar-day-view">-->
-<!--      <div class="day-header">-->
-
-<!--        <h2>{{ dayHeader }}</h2>-->
-<!--      </div>-->
-<!--      <div class="day-single-cell">-->
-<!--        <p>This is a single cell for {{ dayHeader }}. You can put your content here.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
     <!-- Reused grid layout for day view -->
     <div v-if="view === 'day'" class="calendar-grid day-view-grid">
       <!-- Only one column: the current day -->
@@ -107,6 +95,7 @@
 
 <script>
 export default {
+  name: 'CalenderComponent',
   data() {
     return {
       view: 'month',
@@ -407,7 +396,7 @@ export default {
   width: 100%;                    /* Full width of the parent */
   background-color: rgba(64, 0, 255, 0.73);
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 4px 8px;
   font-size: 12px;
   font-weight: 500;

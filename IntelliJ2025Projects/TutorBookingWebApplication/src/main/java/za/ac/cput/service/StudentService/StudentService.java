@@ -37,6 +37,7 @@ public class StudentService implements IStudentService {
         return !studentRepository.existsById(aLong);
     }
 
+
     @Override
     public List<Student> getAll() {
         return studentRepository.findAll();
